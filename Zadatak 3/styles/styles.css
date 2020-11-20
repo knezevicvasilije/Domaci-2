@@ -1,0 +1,90 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.container {
+  width: 80%;
+  margin: 2rem auto;
+  text-align: center;
+}
+.buttons {
+  width: 90%;
+  margin: 2rem auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+button {
+  box-shadow: 0px 10px 13px -7px #000000;
+}
+.buttons button {
+  margin-left: 2rem;
+  padding: 0.6rem 0.8rem;
+  color: white;
+  font-weight: 700;
+  outline: none;
+  cursor: pointer;
+  border: none;
+  font-size: 1rem;
+}
+#noOfElements {
+  padding: 0.3rem;
+}
+#noOfElementsBtn {
+  padding: 0.3rem;
+}
+.buttons #add {
+  background-color: rgb(39, 145, 39);
+}
+.buttons #delete {
+  background-color: rgb(235, 35, 35);
+}
+.boxes {
+  width: 90%;
+  height: 10rem;
+  margin: 4rem auto;
+  border: 1px solid gray;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0.85);
+}
+.boxes .charInput {
+  border: 2px solid black;
+  padding: 0.5rem;
+  width: 2rem;
+  outline: none;
+}
+.output {
+  width: 60%;
+  margin: 2rem auto;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.output button {
+  padding: 0.6rem;
+  width: 10rem;
+}
+.isPalindrome {
+  display: none;
+}
+.isPalShow {
+  display: block;
+}
+.showWord {
+  width: 80%;
+  text-align: center;
+}
+.resetAll {
+  padding: 0.5rem 1rem;
+  width: 7rem;
+  margin-top: 4rem;
+  color: white;
+  font-weight: 600;
+  background-color: rgba(197, 22, 22, 0.877);
+  outline: none;
+}

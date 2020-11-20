@@ -1,0 +1,88 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.container {
+  width: 60%;
+  height: 100vh;
+  margin: 5% auto;
+  text-align: center;
+}
+.todo-inner {
+  margin-top: 2rem;
+  padding: 1rem;
+  border: 1px solid gray;
+  box-shadow: 0px 0px 18px 5px rgba(0, 0, 0, 0.83);
+}
+.title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.form-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 90%s;
+  margin: 1rem auto;
+}
+.form-row .inputs {
+  width: 50%;
+}
+.form-row .inputs input {
+  width: 100%;
+  padding: 0.4rem 0.5rem;
+  border: 1px solid gray;
+  outline: none;
+}
+
+.form-row .buttons {
+  justify-content: end;
+}
+.form-row .buttons button {
+  width: 6rem;
+  margin-left: 1rem;
+  padding: 0.4rem 0.2rem;
+}
+button:hover {
+  cursor: pointer;
+}
+.success {
+  background: rgb(28, 184, 65);
+  color: white;
+
+  border: none;
+}
+.deleteAllBtn {
+  background: rgb(202, 60, 60);
+  color: white;
+  border: none;
+}
+ul {
+  list-style-type: none;
+}
+ul li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.2rem;
+}
+ul li:nth-child(odd) {
+  background-color: rgba(218, 218, 106, 0.411);
+}
+.itemDelete {
+  color: white;
+  border: none;
+  background: rgba(224, 7, 7, 0.856);
+  padding: 0.2rem;
+}
+.itemEdit {
+  color: white;
+  border: none;
+  background: rgba(18, 202, 18, 0.87);
+  padding: 0.2rem 0.5rem;
+}
+.selected {
+  background: rgba(175, 174, 174, 0.829) !important;
+}

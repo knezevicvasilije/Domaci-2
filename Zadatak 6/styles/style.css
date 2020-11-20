@@ -1,0 +1,82 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.calculator {
+  width: 24%;
+  margin: 5% auto;
+  text-align: center;
+  border: 1px solid gray;
+}
+.calcWrap {
+  padding: 0.5rem;
+  background: rgb(3, 3, 39);
+}
+.screenInput {
+  width: 100%;
+  height: 4rem;
+  background: rgb(3, 3, 39);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.screenInput button {
+  margin-top: 0.5rem;
+}
+.screenInput input {
+  width: 100%;
+  font-size: 1.3rem;
+  text-align: right;
+  color: rgba(177, 130, 43, 0.925);
+  background: rgb(3, 3, 39);
+  border: none;
+  outline: none;
+  padding: 0.5rem;
+}
+.btn {
+  width: 4rem;
+  height: 4rem;
+  color: rgba(54, 148, 148, 0.904);
+  background: rgba(7, 7, 59, 0.829);
+  border: none;
+  outline: none;
+  font-size: 1.5rem;
+  font-weight: 100;
+  cursor: pointer;
+}
+.btn-equal {
+  width: 4rem;
+  height: 4rem;
+  color: rgba(54, 148, 148, 0.904);
+  background: rgba(7, 7, 59, 0.829);
+  border: none;
+  outline: none;
+  font-size: 1.5rem;
+  font-weight: 100;
+  cursor: pointer;
+}
+.buttons {
+  padding-top: 3rem;
+  width: 100%;
+  background: rgb(3, 3, 39);
+  display: inline-grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+  align-items: center;
+  justify-content: center;
+}
+@media only screen and (max-width: 600px) {
+  .calculator {
+    width: 100%;
+  }
+  .btn {
+    height: 2rem;
+    width: 2rem;
+  }
+}
+@media only screen and (max-width: 992px) {
+  .calculator {
+    width: 60%;
+  }
+}

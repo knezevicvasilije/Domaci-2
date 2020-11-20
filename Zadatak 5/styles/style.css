@@ -1,0 +1,65 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  width: 80%;
+  margin: 5% auto;
+  text-align: center;
+}
+.options {
+  width: 100%;
+  display: flex;
+}
+.optionBtn {
+  padding: 0.7rem 1rem;
+  width: calc(33%);
+  color: white;
+  font-weight: 700;
+  background-color: rgb(19, 158, 204);
+  outline: none;
+  border: 1px solid gray;
+  cursor: pointer;
+}
+.timer {
+  margin-top: 2rem;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+}
+.timer h1,
+p {
+  font-size: 4rem;
+}
+.controlBtns {
+  width: 30%;
+  margin: 2rem auto;
+  display: none;
+  align-items: center;
+  justify-content: space-between;
+}
+.controlBtnsShow {
+  display: flex;
+}
+.controlBtn {
+  width: 5rem;
+  padding: 0.7rem;
+  color: white;
+  font-weight: 700;
+  outline: none;
+  border: 1px solid gray;
+  cursor: pointer;
+}
+.controlBtn.start {
+  background-color: rgb(33, 163, 33);
+}
+.controlBtn.stop {
+  background-color: rgba(207, 18, 18, 0.911);
+}
+.controlBtn.reset {
+  color: rgba(32, 32, 32, 0.856);
+  background-color: rgba(241, 240, 240, 0.911);
+  border: 1px solid rgba(226, 224, 224, 0.979);
+}

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To do List</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="style/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+</head>
+<body>
+    <div class="container">
+        <div class="title">
+          <div class="textTitle">
+            <h1>Todo List</h1>
+          </div>
+          <div class="searchTitle">
+              <form action="#">
+                <input type="search" placeholder="Search" id="searchtextbox">
+              </form>
+          </div>
+        </div>
+        <div class="todo-inner">
+            <div class="form-row">
+               <div class="form-row inputs">
+                <input type="text" placeholder="Enter your task" id="addtaskinput">
+                <input type="hidden" id="saveindex">
+               </div>
+               <div class="form-row buttons">
+                <button type="button" class="success" id="addtaskbtn">
+                    Add Task
+                </button>
+                <button type="button" class="success" id="savetaskbtn" style="display: none;">
+                    Save Task
+                </button>
+                   <button type="button" class="success" id="savetaskbtn" style="display: none;">
+                Save Task</button>
+                <button type="button" id="deleteallbtn" class="deleteAllBtn">
+                    Delete All
+                </button>
+               </div>
+            </div>
+            <div class="to-do-output">
+                <ul id="addedtasklist">
+                    
+                </ul>
+            </div>
+        </div>
+    </div>
+    <script src="js/app.js"></script>
+</body>
+</html>

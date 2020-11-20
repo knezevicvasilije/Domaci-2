@@ -1,0 +1,81 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  background: url(images/background.png);
+  color: #fff;
+}
+.slider {
+  position: relative;
+  overflow: hidden;
+  height: 40rem;
+  width: 60%;
+  margin: 5% auto;
+}
+.slide {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: opacity 0.4 ease-in-out;
+}
+.slide.current {
+  opacity: 1;
+}
+.slide .content {
+  position: absolute;
+  bottom: 3rem;
+  left: -5rem;
+  opacity: 0;
+  width: 5rem;
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.5);
+  color: #333;
+  padding: 1rem;
+}
+.slide.current .content {
+  opacity: 1;
+  transform: translateX(5rem);
+  transition: all 0.7s ease-in-out 0.3s;
+}
+
+.buttons button#next {
+  position: absolute;
+  top: 50%;
+  right: 10rem;
+}
+.buttons button#prev {
+  position: absolute;
+  top: 50%;
+  left: 10rem;
+}
+.buttons button {
+  border: 2px solid white;
+  background-color: transparent;
+  color: #fff;
+  cursor: pointer;
+  outline: none;
+  padding: 0.8rem 1rem;
+  border-radius: 50%;
+}
+.buttons button:hover {
+  background-color: #fff;
+  color: #333;
+}
+
+.slide:first-child {
+  background: url("images/camping\ -\ Copy.jpg") no-repeat center center/cover;
+}
+.slide:nth-child(2) {
+  background: url("images/header-bg\ -\ Copy.jpg") no-repeat center center/cover;
+}
+.slide:nth-child(3) {
+  background: url("images/hiking\ -\ Copy.jpg") no-repeat center center/cover;
+}
+.slide:nth-child(4) {
+  background: url("images/testimonials-bg.jpg") no-repeat center center/cover;
+}
